@@ -5,18 +5,16 @@
         <v-row justify="center">
           <v-col cols="12" md="10">
             <v-row>
-              <v-col cols="12" md="4" color="orange">
-                <my-sidebar-container></my-sidebar-container>
+              <v-col cols="12" md="4">
+                <sidebar-container></sidebar-container>
               </v-col>
-              <v-col cols="12" md="8" color="lime">
-                <my-content-container></my-content-container>
+              <v-col cols="12" md="8">
+                <content-container></content-container>
               </v-col>
             </v-row>
-
             <v-row>
-              <v-col cols="12" color="blue">
-                <p>timeline</p>
-                <my-timeline-container></my-timeline-container>
+              <v-col cols="12">
+                <timeline-container></timeline-container>
               </v-col>
             </v-row>
           </v-col>
@@ -27,16 +25,16 @@
 </template>
 
 <script>
-import MySidebarContainer from "./sidebar/SidebarContainer";
-import MyContentContainer from "./content/ContentContainer";
-import MyTimelineContainer from "./timeline/TimelineContainer";
+import SidebarContainer from "./sidebar/SidebarContainer";
+import ContentContainer from "./content/ContentContainer";
+import TimelineContainer from "./timeline/TimelineContainer";
 
 export default {
   name: "PurpleTemplateContainer",
   components: {
-    MySidebarContainer,
-    MyContentContainer,
-    MyTimelineContainer
+    SidebarContainer,
+    ContentContainer,
+    TimelineContainer
   }
 };
 </script>

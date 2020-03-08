@@ -24,14 +24,14 @@
           <v-col class="pt-0">
             <v-card hover>
               <v-row>
-                <v-col cols="12" sm="2" align-self="center" class="pa-0">
+                <v-col cols="2" align-self="center" class="pa-0">
                   <v-row justify="center">
                     <v-icon large color="indigo">
                       {{ education.icon }}
                     </v-icon>
                   </v-row>
                 </v-col>
-                <v-col cols="12" sm="10" class="pt-0 pb-0">
+                <v-col cols="10" class="pt-0 pb-0">
                   <v-card-title>
                     {{ education.title }}
                   </v-card-title>
@@ -61,7 +61,7 @@
       <content-section title="Skills">
         <v-row>
           <template v-for="(skill, index) in skills">
-            <v-col cols="12" md="6" xs="12" :key="index">
+            <v-col cols="12" md="6" :key="index">
               <v-hover>
                 <template v-slot="{ hover }">
                   <v-card :elevation="hover ? 6 : 2">

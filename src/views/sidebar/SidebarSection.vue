@@ -2,26 +2,26 @@
   <div>
 
     <div class="title">
-      {{ options.title }}
+      {{ sections.title }}
     </div>
 
     <template>
-        <sidebar-section-item
-        v-for="(item, index) in options.items"
-        :key="index"
-        :item="item"
-        ></sidebar-section-item>
+        <section-item
+          v-for="(item, index) in sections.items"
+          :key="index"
+          :item="item"
+        ></section-item>
     </template>
 
   </div>
 </template>
 
 <script>
-import SidebarSectionItem from "@/views/sidebar/SectionItem";
+import SectionItem from "@/views/sidebar/SectionItem";
 export default {
-  components: { SidebarSectionItem },
+  components: { SectionItem },
   props: { 
-    options: { 
+    sections: { 
       type: Object, 
       default: () => {} 
     } 

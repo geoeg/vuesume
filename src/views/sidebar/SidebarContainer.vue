@@ -1,23 +1,38 @@
 <template>
   <v-card>
     <v-card-text>
-      <div>
-        <avatar></avatar>
-        <h1>Georgi <span class="indigo--text text--lighten-1">Kolev</span></h1>
-        <span>
-          web developer
-        </span>
-      </div>
 
-      <sidebar-container :options="sections.info">
-        <p>sections.info</p>
-      </sidebar-container>
+      <v-row>
+        <v-col class="pa-0">
+          <v-row justify="center" class="ma-4">
+            <avatar></avatar>
+          </v-row>
+          <v-row justify="center" class="ma-2">
+            <h1>Georgi 
+              <span class="indigo--text text--lighten-1">
+                Kolev
+              </span>
+            </h1>
+          </v-row>
+          <v-row justify="center" class="ma-0">
+            <span>
+              web developer
+            </span>
+          </v-row>
+        </v-col>
+      </v-row>
 
-      <sidebar-container :options="sections.socials">
+      <sidebar-section 
+        :sections="sections.info"
+      >
+      </sidebar-section>
+
+      <sidebar-section :sections="sections.socials">
         <p>sections.socials</p>
-      </sidebar-container>
+      </sidebar-section>
 
-      <sidebar-container :options="sections.hobbies">
+      <!-- 
+      <sidebar-section :options="sections.hobbies">
         <p>sections.hobbies</p>
         <template v-slot:item="{ item }">
           <v-chip>
@@ -29,20 +44,21 @@
             {{ item.text }}
           </v-chip>
         </template>
-      </sidebar-container>
+      </sidebar-section>
 
-      <sidebar-container :options="sections.languages">
+      <sidebar-section :options="sections.languages">
         <p>sections.languages</p>
-      </sidebar-container>
+      </sidebar-section> -->
+
     </v-card-text>
   </v-card>
 </template>
 
 <script>
 import Avatar from "./Avatar";
-import SidebarContainer from "./SidebarSection";
+import SidebarSection from "./SidebarSection";
 export default {
-  components: { Avatar, SidebarContainer },
+  components: { Avatar, SidebarSection },
   data() {
     return {
       sections: {
@@ -50,17 +66,14 @@ export default {
           title: "Info",
           items: [
             {
-              name: "Email",
               icon: "mdi-email",
               text: "georgi.lyubomirov.kolev@gmail.com"
             },
             {
-              name: "Birth Date",
               icon: "mdi-cake-variant",
               text: "Sept 8, 1992"
             },
             {
-              name: "Habitation",
               icon: "mdi-map-marker",
               text: "Sofia, Bulgaria"
             }
