@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card height="100%">
     <v-card-text>
       <v-row>
         <v-col class="pa-0">
@@ -32,7 +32,7 @@
             <template v-for="(item, index) in sections.hobbies.items">
               <v-col
                 xs="12"
-                sm="6"
+                sm="12"
                 md="6"
                 lg="4"
                 class="pa-1"
