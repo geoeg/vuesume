@@ -42,10 +42,8 @@ export default {
 <style scoped>
 #template {
   height: 100%;
-  background: #7874f2;
+  background: -webkit-linear-gradient(to left, #b1cbfa, #7874f2); 
+  background: linear-gradient(to left, #b1cbfa, #7874f2);
   background-size: cover;
 }
 </style>
-
-/* background: -webkit-linear-gradient(to left, #b1cbfa, #7874f2); background:
-linear-gradient(to left, #b1cbfa, #7874f2); */
