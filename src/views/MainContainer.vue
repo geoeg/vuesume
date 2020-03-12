@@ -1,8 +1,8 @@
 <template>
   <v-app id="template">
     <v-content>
-      <v-container fill-height fluid class="pt-0 pb-0">
-        <v-row justify="center">
+      <v-container fill-height fluid class="pa-0">
+        <v-row justify="center" class="ma-0">
           <v-col cols="12" sm="10">
             <v-row>
               <v-col cols="12" sm="4">
