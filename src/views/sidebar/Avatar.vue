@@ -1,11 +1,13 @@
 <template>
-  <div>
     <v-avatar size="200">
       <img src="../../../public/geoeg-avatar.jpg" alt="Georgi Kolev" />
     </v-avatar>
-  </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  // name: "Avatar"
+}
+</script>
 
 <style scoped></style>

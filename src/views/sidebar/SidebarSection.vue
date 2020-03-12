@@ -1,39 +1,43 @@
 <template>
   <div>
-
-    <div class="title">
-      {{ options.title }}
+    <div class="title pt-2 pb-2">
+      {{ sections.title }}
     </div>
 
-    <template>
-        <sidebar-section-item
-        v-for="(item, index) in options.items"
-        :key="index"
-        :item="item"
-        ></sidebar-section-item>
+    <template v-if="$slots.hobbies">
+      <slot name="hobbies"></slot>
+    </template>
+
+    <template v-else-if="$slots.languages">
+      <slot name="languages"></slot>
+    </template>
+
+    <template v-else>
+      <slot name="default">
+        <section-item
+          v-for="(item, index) in sections.items"
+          :key="index"
+          :item="item"
+        ></section-item>
+      </slot>
     </template>
 
   </div>
 </template>
 
 <script>
-import SidebarSectionItem from "@/views/sidebar/SectionItem";
+import SectionItem from "@/views/sidebar/SectionItem";
 export default {
-  components: { SidebarSectionItem },
-  props: { 
-    options: { 
-      type: Object, 
-      default: () => {} 
-    } 
+  // name: "SidebarSection",
+  components: { SectionItem },
+  props: {
+    sections: {
+      type: Object,
+      default: () => {}
+    }
   }
 };
 </script>
 
 <style scoped>
-/* .title {
-  border-bottom: 2px #bfbfbf solid;
-  font-weight: 300;
-  line-height: 1 !important;
-  letter-spacing: 0.2em !important;
-} */
 </style>
