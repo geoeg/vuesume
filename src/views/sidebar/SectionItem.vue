@@ -24,13 +24,12 @@
         </span>
       </p>
     </v-col>
-
   </v-row>
 </template>
 
 <script>
 export default {
-
+  // name: "SectionItem",
   props: {
     item: {
       type: Object,

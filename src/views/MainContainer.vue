@@ -1,14 +1,14 @@
 <template>
   <v-app id="template">
     <v-content>
-      <v-container fluid>
+      <v-container fluid class="pt-0 pb-0">
         <v-row justify="center">
-          <v-col cols="12" md="10">
+          <v-col cols="12" sm="10">
             <v-row>
-              <v-col cols="12" md="4">
+              <v-col cols="12" sm="4">
                 <sidebar-container></sidebar-container>
               </v-col>
-              <v-col cols="12" md="8">
+              <v-col cols="12" sm="8">
                 <content-container></content-container>
               </v-col>
             </v-row>
@@ -30,7 +30,7 @@ import ContentContainer from "./content/ContentContainer";
 import TimelineContainer from "./timeline/TimelineContainer";
 
 export default {
-  name: "PurpleTemplateContainer",
+  name: "MainContainer",
   components: {
     SidebarContainer,
     ContentContainer,

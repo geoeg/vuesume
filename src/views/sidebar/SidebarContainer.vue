@@ -1,20 +1,20 @@
 <template>
   <v-card>
     <v-card-text>
-
       <v-row>
         <v-col class="pa-0">
           <v-row justify="center" class="ma-4">
             <avatar></avatar>
           </v-row>
           <v-row justify="center" class="ma-2">
-            <h1>Georgi 
+            <h1>
+              Georgi
               <span class="indigo--text text--lighten-1">
                 Kolev
               </span>
             </h1>
           </v-row>
-          <v-row justify="center" class="ma-0">
+          <v-row justify="center" class="ma-0 pb-4">
             <span>
               web developer
             </span>
@@ -22,34 +22,56 @@
         </v-col>
       </v-row>
 
-      <sidebar-section 
-        :sections="sections.info"
-      >
-      </sidebar-section>
+      <sidebar-section :sections="sections.info"></sidebar-section>
 
-      <sidebar-section :sections="sections.socials">
-        <p>sections.socials</p>
-      </sidebar-section>
+      <sidebar-section :sections="sections.socials"></sidebar-section>
 
-      <!-- 
-      <sidebar-section :options="sections.hobbies">
-        <p>sections.hobbies</p>
-        <template v-slot:item="{ item }">
-          <v-chip>
-            <v-avatar>
-              <v-icon>
-                {{ item.icon }}
-              </v-icon>
-            </v-avatar>
-            {{ item.text }}
-          </v-chip>
+      <sidebar-section :sections="sections.hobbies">
+        <template #hobbies>
+          <v-row class="ml-1 mr-1" justify="center">
+            <template v-for="(item, index) in sections.hobbies.items">
+              <v-col
+                xs="12"
+                sm="6"
+                md="6"
+                lg="4"
+                class="pa-1"
+                align="center"
+                :key="index"
+              >
+                <v-chip class="pa-4 mt-1 mb-1" outlined color="indigo">
+                  <v-avatar left>
+                    <v-icon>
+                      {{ item.icon }}
+                    </v-icon>
+                  </v-avatar>
+                  {{ item.text }}
+                </v-chip>
+              </v-col>
+            </template>
+          </v-row>
         </template>
       </sidebar-section>
 
-      <sidebar-section :options="sections.languages">
-        <p>sections.languages</p>
-      </sidebar-section> -->
-
+      <sidebar-section :sections="sections.languages">
+        <template #languages>
+          <v-row justify="center">
+            <template v-for="(language, index) in sections.languages.items">
+              <v-col class="pa-2" align="center" :key="index">
+                <v-progress-circular
+                  :value="language.value"
+                  size="100"
+                  width="8"
+                  rotate="270"
+                  color="#7874f2"
+                >
+                  {{ language.text }}
+                </v-progress-circular>
+              </v-col>
+            </template>
+          </v-row>
+        </template>
+      </sidebar-section>
     </v-card-text>
   </v-card>
 </template>
@@ -58,6 +80,7 @@
 import Avatar from "./Avatar";
 import SidebarSection from "./SidebarSection";
 export default {
+  // name: "SidebarContainer",
   components: { Avatar, SidebarSection },
   data() {
     return {
@@ -83,12 +106,12 @@ export default {
           title: "Socials",
           items: [
             {
-              icon: "mdi-linkedin-box",
+              icon: "mdi-linkedin",
               text: "linkedin.com/in/georgi-kolev",
               link: "https://www.linkedin.com/in/georgi-kolev-03656619b"
             },
             {
-              icon: "mdi-github-circle",
+              icon: "mdi-github",
               text: "github.com/geoeg",
               link: "https://github.com/geoeg"
             },
@@ -104,19 +127,15 @@ export default {
           items: [
             {
               icon: "mdi-chef-hat",
-              text: "Cooking"
+              text: "Cook"
             },
             {
               icon: "mdi-soccer",
-              text: "Sports"
+              text: "Sport"
             },
             {
               icon: "mdi-code-tags",
               text: "Code"
-            },
-            {
-              icon: "mdi-book-open-page-variant",
-              text: "Reading"
             },
             {
               icon: "mdi-music-circle",
