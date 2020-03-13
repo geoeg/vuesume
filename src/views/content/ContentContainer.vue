@@ -54,6 +54,7 @@
           <v-row>
             <template v-for="(skill, index) in skills">
               <v-col cols="12" md="6" :key="index">
+                
                 <v-hover>
                   <template v-slot="{ hover }">
                     <v-card :elevation="hover ? 6 : 2">
@@ -71,6 +72,7 @@
                     </v-card>
                   </template>
                 </v-hover>
+
               </v-col>
             </template>
           </v-row>
