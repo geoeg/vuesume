@@ -30,7 +30,7 @@
 
             <template v-slot:opposite></template>
 
-            <v-row>
+            <v-row class="pr-4">
               <v-col
                 v-if="$vuetify.breakpoint.smAndUp"
                 md="1"
@@ -59,7 +59,7 @@
                         xs="12"
                         class="pa-4 ma-0"
                       >
-                        <div class="mr-0">
+                        <div class="ma-0">
                           <span v-if="item.text" class="pre">
                             {{ item.text }}
                           </span>

@@ -1,6 +1,6 @@
 <template>
-    <v-avatar size="200">
-      <img src="../../../public/geoeg-avatar.jpg" alt="Georgi Kolev" />
+    <v-avatar class="avatar">
+      <img class="avatar" src="../../../public/geoeg-avatar.jpg" alt="Georgi Kolev" />
     </v-avatar>
 </template>
 
@@ -10,4 +10,9 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+  .avatar {
+    width: 200px !important;
+    height: 200px !important;
+  }
+</style>
