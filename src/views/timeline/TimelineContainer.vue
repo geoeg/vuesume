@@ -104,7 +104,7 @@ export default {
           <p>
             For me learning foreign languages was something really interesting I decided to join the <a target="_blank" href="https://eg-dobrich.com/">Foreign Language School Geo Milev</a>
             where I studied german as main and english as second foreign language. The last year of high school I passed DaF (Deutsch als Fremdsprache) exam that gave me the C1 german certificate.
-            The excelent degree and the DaF certificate where a clear sign for me that I want to explore some german speaking counrty.
+            The excelent degree and the DaF certificate where a clear sign for me that I want to explore some german speaking country.
           </p>
         `,
         icon: "mdi-school"
