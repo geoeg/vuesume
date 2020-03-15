@@ -84,7 +84,7 @@ export default {
   // name      : 'TimelineContainer',
   components: { ContentSection },
   data: () => ({
-    detailed: true,
+    detailed: false,
     items: [
       {
         detailed: true,
