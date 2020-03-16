@@ -1,24 +1,11 @@
-# vuesume
+# vue + resume = vuesume
+-> [vuesume](https://geoeg.github.io/vuesume/) <-
 
-## Project setup
-```
-npm install
-```
+## Description
+This repository represents my resume made with Vue.js using Vuetify. It includes a simple description of myself - profile, education, skills, hobbies and a short timeline about my professional experience.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## License
+Code is licensed unter the [MIT License](https://github.com/geoeg/vuesume/blob/master/LICENSE.md).
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 
+This project was inspired by [Amirreza Nasiri](https://github.com/evryn/vue-modern-resume/tree/master).
