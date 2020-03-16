@@ -104,8 +104,16 @@ export default {
           <p>
             For me learning foreign languages was something really interesting I decided to join the <a target="_blank" href="https://eg-dobrich.com/">Foreign Language School Geo Milev</a>
             where I studied german as main and english as second foreign language. The last year of high school I passed DaF (Deutsch als Fremdsprache) exam that gave me the C1 german certificate.
-            The excelent degree and the DaF certificate where a clear sign for me that I want to explore some german speaking country.
+            The excellent degree and the DaF certificate where a clear sign for me that I want to explore some german speaking country.
           </p>
+          <p>
+            Main topics during the high school years were:
+          </p>
+          <ul>
+              <li>German</li>
+              <li>English</li>
+              <li>Mathematics</li>
+          </ul>
         `,
         icon: "mdi-school"
       },
@@ -130,8 +138,13 @@ export default {
           <p>
             I spent a year working at <a target="_blank" href="https://www.snoopmedia.com/">Snoopmedia</a>. There I supported the experienced colleagues in small tasks like updating the content of the web pages of
             the German Academic Exchange Service (Deutscher Akademischer Austauschdienst - <a target="_blank" href="https://www.daad.de/de/">DAAD</a>) and <a target="_blank" href="https://www.das-ist-drin.de/">das-ist-drin</a>.
-            In the time there I boosted my time management skills and learned some basic web technologies like HTML, CSS and JS.
+            In the time there I boosted my time management skills and learned some basic web technologies:
           </p>
+          <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+          </ul>
         `,
         icon: "mdi-laptop"
       },
@@ -146,6 +159,13 @@ export default {
           There the students used to assist the technical preparation of scenes and support the normal workflow of the conference.
           The visit of DOAG showed me some interesting keynotes, presentations and workshops that opened my eyes for some new IT technologies. 
           </p>
+          <p>
+            Main todos during the volunteering were:
+          </p>
+          <ul>
+            <li>Support the workflow of the presentations at the conference</li>
+            <li>Helping guest by giving them a current information about the conference schedule</li>
+            </ul>
         `,
         icon: "mdi-cards-heart"
       },
