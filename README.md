@@ -7,5 +7,5 @@ This repository represents my resume made with Vue.js using Vuetify. It includes
 ## License
 Code is licensed unter the [MIT License](https://github.com/geoeg/vuesume/blob/master/LICENSE.md).
 
-### 
+---
 This project was inspired by [Amirreza Nasiri](https://github.com/evryn/vue-modern-resume/tree/master).
