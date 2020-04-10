@@ -55,15 +55,12 @@
           <v-col cols="12" md="6" :key="index" class="pb-0">
             <v-hover>
               <template v-slot="{ hover }">
-                <v-tooltip bottom>
-                  <template v-slot:activator="{ on }">
                     <v-card :elevation="hover ? 6 : 2">
                       <v-icon color="indigo">
                         {{ skill.icon }}
                       </v-icon>
                       {{ skill.title }}
                       <v-progress-linear
-                        v-on="on"
                         background-opacity="0.3"
                         height="8"
                         color="#7874f2"
@@ -71,20 +68,20 @@
                         :value="skill.value"
                       ></v-progress-linear>
                     </v-card>
-                  </template>
-                  <span>Some more information</span>
-                </v-tooltip>
               </template>
             </v-hover>
             <v-row justify="space-between">
               <v-chip class="ml-2 mr-2" outlined x-small text-color="indigo">
-                Beginner
+                Jnr
               </v-chip>
               <v-chip class="ml-2 mr-2" outlined x-small text-color="indigo">
-                Junior
+                Mid
               </v-chip>
               <v-chip class="ml-2 mr-2" outlined x-small text-color="indigo">
-                Middle
+                Snr
+              </v-chip>
+              <v-chip class="ml-2 mr-2" outlined x-small text-color="indigo">
+                Pro
               </v-chip>
             </v-row>
           </v-col>
@@ -122,72 +119,72 @@ export default {
       {
         title: "JavaScript",
         icon: "mdi-language-javascript",
-        value: 80
+        value: 45
       },
       {
         title: "HTML",
         icon: "mdi-language-html5",
-        value: 80
+        value: 50
       },
       {
         title: "VueJS",
         icon: "mdi-vuejs",
-        value: 55
+        value: 30
       },
       {
         title: "CSS",
         icon: "mdi-language-css3",
-        value: 80
+        value: 50
       },
       {
         title: "Vuetify",
         icon: "mdi-vuetify",
-        value: 60
+        value: 45
       },
       {
         title: "Bootstrap",
         icon: "mdi-bootstrap",
-        value: 75
+        value: 35
       },
       {
         title: "Git",
         icon: "mdi-git",
-        value: 75
+        value: 35
       },
       {
         title: "jQuery",
         icon: "mdi-jquery",
-        value: 70
+        value: 35
       },
       {
         title: "Agile Development",
         icon: "mdi-teach",
-        value: 95
+        value: 35
       },
       {
         title: "JIRA",
         icon: "mdi-jira",
-        value: 90
+        value: 40
       },
       {
         title: "Balsamiq",
         icon: "mdi-brush",
-        value: 90
+        value: 50
       },
       {
         title: "Adobe XD",
         icon: "mdi-adobe",
-        value: 40
+        value: 30
       },
       {
         title: "Selenium",
         icon: "mdi-view-quilt",
-        value: 40
+        value: 20
       },
       {
         title: "Cucumber",
         icon: "mdi-view-quilt",
-        value: 30
+        value: 20
       }
     ]
   })
